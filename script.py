@@ -1,7 +1,14 @@
 import random
 
-print(random.randint(0, 6))
+def roll():
+    return random.randint(1, 6)
 
+print(roll())
+
+i = 0
+while i < 100:
+    print(roll())
+    i = i + 1
 print("Hello World")
 
 # return user parameters
