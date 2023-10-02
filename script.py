@@ -1,15 +1,16 @@
 import random
 
-def roll():
-    return random.randint(1, 6)
+def roll(size):
+    return random.randint(1, size)
 
-print(roll())
+print("A d6")
+print(roll(6))
 
-i = 0
-while i < 100:
-    print(roll())
-    i = i + 1
-print("Hello World")
+print("A d8")
+print(roll(8))
+
+print("A d10")
+print(roll(10))
 
 # return user parameters
 # roll a random d6
